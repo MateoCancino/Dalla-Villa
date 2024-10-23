@@ -1,0 +1,29 @@
+/*Damos incio con los parametros basicos*/
+*{
+    background-color: #b6b6b6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+    font-family: ;
+    background-color: ;
+    color: ;
+    */
+}
+/*Le damos la posición a los link*/
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+/*Definimos por separado el alto del logo*/
+.nav-logo{
+    height: 50px;
+}
+
+header nav ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
