@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <title>Dalla Villa</title>
 </head>
 <body>
+    <!-- Navbar-->
     <header>
-        <div>
-            <img src="/Imagenes/logo.png" alt="logo">
+        <div class="header--logo">
+            <a href="#inicio">
+                <img src="Imagenes/logo-gris.svg" alt="Dalla Villa">
+            </a>
+        </div>
+        <div class="line">
+            <p></p>
         </div>
         <nav>
-            <ul>
-                <li href="#">Nosotros</li>
-                <li href="#">Servicios</li>
-                <li href="#">Contacto</li>
+            <ul class="navbar">
+                <li class="navbar--item"><a href="#nosotros">Nosotros</a></li>
+                <li class="navbar--item"><a href="#servicios">Servicios</a></li>
+                <li class="navbar--item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <!--Sección de Inicio-->
+        <section id ="inicio" class="inicio">
+            <div class="container--inicio">
+                <img class="inicio--logo" src="Imagenes/logo-azul.svg" alt="logo">
+                <div class="inicio--text">
+                    <h1>ESCRIBANIA DALLA VILLA</h1>
+                    <p>Registro Notarial N°17</p>
+                </div>
+            </div>
+            <div class="container--inicio_edifice">
+                <img src="Imagenes/edificio-dallavilla.png" alt="Edificio">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
