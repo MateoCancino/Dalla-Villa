@@ -110,3 +110,18 @@ section.inicio{
     overflow: hidden;
     }
 
+    /* Estilos del contenedor de la imagen */
+    .contenedor_img {
+        margin: 10px;
+        margin-bottom: 0;
+        width: 40vw;
+    
+    }
+
+    /* Atributos para la imagen */
+    .contenedor_img img{
+        width:40vw;
+        /* Difuminado de la imagen */
+        mask-image: linear-gradient(#fff 50%, transparent);
+    
+    }
