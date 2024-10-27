@@ -108,7 +108,6 @@ section.inicio{
 display: flex;
 font-family: sans-serif;
 overflow: hidden;
-margin-top: 10vh;
 }
 /* Estilos del contenedor de la imagen */
 .contenedor_img {
@@ -150,8 +149,8 @@ margin-top: 10vh;
     border: 3px #435b94 solid;
     padding: 5px;
     padding-top: 2px;
-    height: 220px;/* 220/230 */
-    width: 200px;
+    height: 28vh;/* 220/230 */
+    width: 15vw;
     border-radius: 10px;
     box-shadow: 0 0 30px #435b94;
     text-align: center;
@@ -159,7 +158,7 @@ margin-top: 10vh;
 /* Imagenes de las subcajas */
 .contenedor_sub_cajas img {
         width: 100%;
-        height: 150px;
+        height: 70%;
 }
 
 
