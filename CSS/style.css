@@ -103,3 +103,10 @@ section.inicio{
     display: flex;
 }
 
+/* Estilos de la seccion nosotros */
+.nosotros {
+    display: flex;
+    font-family: sans-serif;
+    overflow: hidden;
+    }
+
