@@ -302,6 +302,18 @@ section.inicio{
     100% { opacity: 1; transform: translateY(0); }
 }
 
+#servicios{
+    width:100vw;
+    height:85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
 h2 {
     color: #435b94;
     font-size: 300%;
