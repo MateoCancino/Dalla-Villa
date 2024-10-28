@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/*Damos incio con los parametros basicos*/
+>>>>>>> developer
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +19,10 @@ header{
     gap: 15px;
     position: sticky;
     top: 0px;
+<<<<<<< HEAD
+=======
+    z-index: 10;
+>>>>>>> developer
 }
 .header--burguer__menu{
     display: none;
@@ -101,8 +109,131 @@ section.inicio{
     height: 600px;
     display: flex;
 }
+<<<<<<< HEAD
 /*@media(max-width:768px){
     header{
 
     }
 }*/
+=======
+
+/* Estilos de la seccion nosotros */
+.nosotros {
+display: flex;
+font-family: sans-serif;
+overflow: hidden;
+}
+/* Estilos del contenedor de la imagen */
+.contenedor_img {
+    margin: 10px;
+    margin-bottom: 0;
+    width: 40vw;
+
+}
+/* Atributos para la imagen */
+.contenedor_img img{
+    width:40vw;
+    /* Difuminado de la imagen */
+    mask-image: linear-gradient(#fff 50%, transparent);
+    z-index: 0;
+    position: relative;
+
+}
+/* Contenedor para las cajas de presentacion */
+.contenerdor_presentacion{
+    width:60vw ;   
+}
+/* Caja de presentacion */
+.presentacion{
+    border: 3px #435b94 solid;
+    padding: 10px;
+    margin: 40px;
+    height: 35vh;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #435b94;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+/* Contenedor de subcajas */
+.contenedor_sub_cajas{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+/* Subcajas */
+.sub_1, .sub_2, .sub_3{
+    border: 3px #435b94 solid;
+    padding: 5px;
+    padding-top: 2px;
+    height: 28vh;
+    width: 15vw;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #435b94;
+    text-align: center;
+}
+/* Imagenes de las subcajas */
+.contenedor_sub_cajas img {
+        width: 100%;
+        height: 70%;
+}
+
+h2 {
+    color: #435b94;
+    font-size: 300%;
+}
+
+/* dando estilos a los distintas secciones (general,contacto y telfono)*/
+.general {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto {
+    width: 50%;  
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.telefonos {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.ubicacion {
+    margin-left: 30px;
+    margin-top: 1px;
+}
+
+.telUbi{
+    width: 50%;
+    display: grid;
+}
+placeholder {
+    color: #b4b4b4;;
+}
+
+input:hover{
+    background-color: #ecebeb;
+}
+
+input {
+    font-size: 150%;
+    width: 700px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    border-bottom: 2px solid #b4b4b4;
+}
+
+label {
+    color: #435b94;
+    font-size: 150%;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+>>>>>>> developer
