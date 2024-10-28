@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 /*Damos incio con los parametros basicos*/
->>>>>>> developer
 *{
     margin: 0;
     padding: 0;
@@ -19,10 +16,7 @@ header{
     gap: 15px;
     position: sticky;
     top: 0px;
-<<<<<<< HEAD
-=======
     z-index: 10;
->>>>>>> developer
 }
 .header--burguer__menu{
     display: none;
@@ -109,13 +103,6 @@ section.inicio{
     height: 600px;
     display: flex;
 }
-<<<<<<< HEAD
-/*@media(max-width:768px){
-    header{
-
-    }
-}*/
-=======
 
 /* Estilos de la seccion nosotros */
 .nosotros {
@@ -236,4 +223,3 @@ label {
     margin-top: 15px;
     margin-left: 30px;
 }
->>>>>>> developer
