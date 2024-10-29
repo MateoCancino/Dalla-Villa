@@ -325,6 +325,17 @@ section.inicio{
     border-radius: 10px;
     margin-top: 20px;
 }
+button {
+    width: 300px;
+    padding: 8px;
+    text-align: center;
+    margin-left: 74vh;
+    border-radius: 10px;
+    border-color: #435b94;
+    box-shadow: 0 0 20px #435b94;
+    color: #435b94;
+    font-size: 17px;
+}
 
 
 
