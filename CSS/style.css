@@ -317,7 +317,12 @@ section.inicio{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 20px;   
+    border-radius: 20px;  
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease-in-out; 
+}
+.servicio__item:hover{
+    transform: scale(1.05); 
 }
 .servicio__item img{
     width: 200px;
