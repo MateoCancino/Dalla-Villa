@@ -18,15 +18,17 @@ header{
     top: 0px;
     z-index: 10;
 }
+/*
 .header--burguer__menu{
     display: none;
 }
-header .header--logo a img{
+*/
+header .header__logo a img{
     height: 40px;
     margin-left: 30px;
     transition: 0.5s;
 }
-header .header--logo a img:hover{
+header .header__logo a img:hover{
     transform: translateY(-4px);
 }
 /*Linea entre el Logo & NavBar Items*/
@@ -41,7 +43,7 @@ header .header--logo a img:hover{
     display: flex;
     justify-content: start;
 }
-.navbar--item a{
+.navbar__item a{
     text-decoration: none;
     margin-left: 25px;
     color: #435b94;
@@ -50,7 +52,7 @@ header .header--logo a img:hover{
     border-radius: 1rem;
     transition: 0.5s;
 }
-.navbar--item a:hover{
+.navbar__item a:hover{
     background-color: #435b94;
     color:#fafbff;
 }
@@ -66,42 +68,43 @@ section.inicio{
     align-items: center;
     overflow: hidden;
 }
-.container--inicio{
+.container__inicio{
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 30px;
 }
-.inicio--logo {
+.inicio__logo {
     display: flex;
     height: 280px;
     margin-left: 100px;
 }
-.inicio--text{
+.inicio__text{
     overflow: visible;
     width: auto;
     text-align: center;
 }
-.inicio--text h1{
+.inicio__text h1{
     font-family: "Sora", sans-serif;
     font-size: 80px;
     font-weight: 400;
     color:#435b94;
 }
-.inicio--text p{
+.inicio__text p{
     color: #435b94;
     font-size: 30px;
 }
-.container--inicio_edifice img{
+.container__inicio--edifice{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.container__inicio--edifice img{
     mask-image: linear-gradient(
         black 70%,
         transparent
     );
-    align-items: center;
-    justify-content: end;
-    width: auto;
     height: 600px;
-    display: flex;
     
 }
 
