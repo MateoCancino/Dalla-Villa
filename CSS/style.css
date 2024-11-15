@@ -689,7 +689,7 @@ user-select: none;
         width: 100%;
     }
 }
-/* estilo pagina testamentos*/
+/* estilo pagina testamentos y gestion inmobiliaria*/
 .general {
     background-color: #fafbff;
     width: 100vw;
@@ -698,6 +698,7 @@ user-select: none;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    animation: fadeIn 1s ease-out;
 }
 
 .titulo {
