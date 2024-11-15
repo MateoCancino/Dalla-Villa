@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+body{
     background-color: #fafbff;
 }
 /*Header & NavBar*/
@@ -359,4 +361,29 @@ label {
     font-size: 150%;
     margin-top: 15px;
     margin-left: 30px;
+}
+/*footer*/
+.footer{
+    background-color: #24262b;
+    border: 1px black solid;
+    padding: 80px 0;  
+    text-transform: capitalize; 
+}
+
+/*Contenedor*/
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*estilo para las listas*/
+.footer ul li{
+    list-style: none;
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+    user-select: none;
 }
