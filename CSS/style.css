@@ -54,6 +54,13 @@ header .header__logo a img:hover{
 .navbar__item a:hover{
     background-color: #435b94;
     color:#fafbff;
+    transform: translateY(-4px);
+}
+.navbar__item a:active{
+    background-color: #657db7 ;
+}
+.navbar--inicio{
+    display: none;
 }
 /*NavBar responsive*/
 #menu-icon{
@@ -68,29 +75,46 @@ header .header__logo a img:hover{
     header{
         align-items: center;
         justify-content: space-between;
+        height: 10vh;
     }
     #menu-icon{
         display: block;
         margin-right: 2rem;
+    }
+    .header__logo{
+        display: none;
     }
     .navbar{
         position: absolute;
         top: 0;
         right: -100%;
         height: 100vh;
-        width: 100%;
+        width: 50%;
         display: flex;
         align-items: center;
         flex-direction: column;
         padding-top: 100px;
         transition: all .7s ease;
+        background-color:#fafbff92 ;
         backdrop-filter: blur(50px);
+        box-shadow: 0 0 50px 20px #435b94;
+    }
+    .navbar li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar__item li:hover{
+        background-color: #435b94;
+        color:#fafbff;
+    }
+    .navbar--inicio{
+        display: block;
     }
     .line{
         display: none;
     }
     .navbar__item{
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .navbar.open{
         right: 0;
@@ -148,17 +172,25 @@ section.inicio{
         transparent
     );
     height: 600px;
-    
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
     .inicio{
+        margin-top: 10vh;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
     }
+    .container__inicio{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .inicio__logo{
-        width: 10rem;
+        width: 7rem;
+        height: auto;
+        margin-left: -20px;
     }
     .inicio__text h1{
         font-size: 30px;
@@ -173,7 +205,9 @@ section.inicio{
         display: flex;
         align-items: center;
         justify-content: center;
+        bottom: 0;
     }
+    
 }
 /* Estilos de la seccion nosotros */
 .nosotros {
@@ -705,7 +739,7 @@ button {
 button:hover {
     background-color:#435b94;
     padding: 5px;
-    color: #b4b4b4;
+    color: #fafbff;
     width: 560px;
     height: 40px;
     transform: scale(1.1); /* Agranda ligeramente el botón */
