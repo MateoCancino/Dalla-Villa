@@ -346,14 +346,14 @@ button {
 h2 {
     color: #435b94;
     font-size: 300%;
-    transition: all 0.3s ease-in-out; /* Animación suave para cambios */
+    transition: all 0.3s ease-in-out;
     margin-left: 30px;
 }
 
 h2:hover {
     color: #435b96;
     transform: scale(1.1);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 /* dando estilos a los distintas secciones (general,contacto y telfono)*/
 .general {
@@ -371,8 +371,9 @@ h2:hover {
 }
 
 .telefonos {
-    margin-top: 40px;
+    margin-top: 0px;
     margin-left: 30px;
+    margin-bottom: 280px;
 }
 
 .ubicacion {
@@ -402,14 +403,14 @@ input {
     padding: 6px 12px;
     border: none;
     border-bottom: 2px solid #b4b4b4;
-    transition: all 0.3s ease; /* Transición suave para las animaciones */
+    transition: all 0.3s ease; 
 }
 
 input:hover {
-    outline: none; /* Quita el borde azul por defecto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    outline: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    border-color: #007BFF; /* Cambia el color del borde */
+    border-color: #007BFF; 
 }
 label {
     color: #435b94;
@@ -435,11 +436,11 @@ textarea {
     }
 }
 textarea:hover {
-    outline: none; /* Quita el borde azul por defecto */
+    outline: none; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-    transform: scale(1.02); /* Aumenta ligeramente el tamaño */
+    transform: scale(1.02); 
     border-color: #007BFF; /* Cambia el color del borde */
-    transition: all 0.3s ease; /* Transición suave para las animaciones */
+    transition: all 0.3s ease; 
 }
 
 button {
@@ -459,11 +460,11 @@ button:hover {
 @media (max-width: 900px) {
     .general {
         flex-direction: column; /* Los elementos se apilan en columna */
-        align-items: center; /* Centra los elementos en la pantalla */
+        align-items: center; 
     }
 
     .contacto, .telefonos {
-        width: 80%; /* Usan casi todo el ancho */
+        width: 80%; 
         margin-left: 0;
         margin-right: 0;
         text-align: center;
@@ -478,12 +479,12 @@ button:hover {
     }
 
     input, textarea {
-        width: 95%; /* Reducir el ancho */
+        width: 95%; 
         margin-left: 0;
     }
 
     textarea {
-        height: 250px; /* Reducir altura para pantallas medianas */
+        height: 250px; 
     }
     button {
         width: 80px;
@@ -650,19 +651,20 @@ user-select: none;
 
 .titulo h1 {
     color: #435b94;
-    font-size: 6rem; /* Tamaño del título */
-    margin-bottom: 80px;
+    font-size: 6rem; 
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .titulo p {
-    letter-spacing: 1.5px; /* Incrementa la separación entre letras */
+    letter-spacing: 1.5px; 
     line-height: 1.8; /* Incrementa la altura de las líneas */
-    font-size: 1.8rem; /* Tamaño del texto */
+    font-size: 1.8rem; 
     line-height: 1.6;
     margin-bottom: 15px;
     margin-left:165px;
-    max-width: 80%; /* Ajusta el ancho máximo del párrafo */
-    text-align: justify; /* Justifica el texto para mejorar su presentación */
+    max-width: 80%; 
+    text-align: justify; 
 }
 
 .imagen{
@@ -684,8 +686,8 @@ user-select: none;
 }
 .imagen:hover img {
     transform: scale(1.1); /* Aumenta el tamaño al 110% */
-    background-color: rgba(0, 0, 0, 0.2); /* Agrega un fondo semitransparente */
-    border-radius: 10px; /* Añade bordes redondeados al pasar el cursor */
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     border-color: #435b94;
     box-shadow: 0 0 40px #435b94;
 }
@@ -693,8 +695,7 @@ button {
     margin-top: 50px;
     width: 560px;
     height: 40px;
-    margin-left: 30px;
-    margin-left: 450px;
+    margin-left: 1000px;
     border-color: #435b94;
     box-shadow: 0 0 40px #435b94;
     color: #435b94;
@@ -708,19 +709,19 @@ button:hover {
     color: #b4b4b4;
     width: 560px;
     height: 40px;
-    transform: scale(1.1); /* Agranda ligeramente el botón */
+    transform: scale(1.1); 
     animation: bounce 0.5s ease; /* Aplica la animación de rebote */
 }
 
 @media (max-width: 768px) {
     .general {
-        flex-direction: column; /* Cambia los elementos a columna */
+        flex-direction: column; 
         height: auto;
     }
 
     .titulo, .imagen {
-        flex: 1 1 100%; /* Ocupan el 100% del ancho */
-        text-align: center; /* Centra el contenido */
+        flex: 1 1 100%; 
+        text-align: center; 
     }
 
     .titulo h1 {
