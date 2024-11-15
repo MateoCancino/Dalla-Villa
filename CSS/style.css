@@ -387,3 +387,36 @@ label {
     transition: all .3s ease;
     user-select: none;
 }
+.footer ul li:hover{
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+/*Filas*/
+.filas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Informacion*/
+.informacion{
+    width: 25%;
+    padding: 0 15px;
+    
+}
+
+/*Estilos de texto*/
+.informacion h4{
+font-size: 20px;
+color: #ffffff;
+margin-bottom: 25px;
+font-weight: 500;
+border-bottom: 2px solid #00c3ff;
+padding-bottom: 10px;
+display: inline-block;
+user-select: none;
+}
+
+.titulo_centrado{
+    text-align: center;
+}
