@@ -167,10 +167,6 @@ section.inicio{
     justify-content: center;
 }
 .container__inicio--edifice img{
-    mask-image: linear-gradient(
-        black 70%,
-        transparent
-    );
     height: 600px;
 }
 @media screen and (max-width: 1000px){
