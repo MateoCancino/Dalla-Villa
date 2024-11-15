@@ -452,3 +452,49 @@ user-select: none;
 .redes_sociales a:hover{
     background-color: #FFD700;
 }
+
+#mapa {
+    width: 50%; /* Hace que el mapa ocupe el espacio de dos columnas */
+    padding: 15px;
+    padding-top: 0;
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+#mapa h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 10px;
+    user-select: none;
+}
+
+/* Estilos para el iframe dentro del contenedor mapa */
+.map iframe {
+    width: 80%; /* Ajusta el ancho según lo que necesites */
+    height: 235px; /* Ajusta la altura para que quede más bajo */
+    margin: 0 ;
+    border: 0; /* Elimina el borde */
+    display: block; /* Elimina el espacio debajo del iframe */
+}
+
+@media (max-width:900px){
+    .filas{
+        text-align: center;
+    }
+    .informacion{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #mapa{
+        margin: 0 auto;
+    }
+    .map {
+        width: 100%; 
+    }
+    .map iframe{
+        width: 100%;
+    }
+}
