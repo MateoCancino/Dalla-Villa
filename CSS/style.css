@@ -456,7 +456,40 @@ button:hover {
     width: 100px;
     height: 40px;
 }
+@media (max-width: 900px) {
+    .general {
+        flex-direction: column; /* Los elementos se apilan en columna */
+        align-items: center; /* Centra los elementos en la pantalla */
+    }
 
+    .contacto, .telefonos {
+        width: 80%; /* Usan casi todo el ancho */
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .telefonos > input {
+        width: 20vh;
+    }
+
+    .telefonos > img {
+        opacity: 0;
+    }
+
+    input, textarea {
+        width: 95%; /* Reducir el ancho */
+        margin-left: 0;
+    }
+
+    textarea {
+        height: 250px; /* Reducir altura para pantallas medianas */
+    }
+    button {
+        width: 80px;
+        height: 35px;
+    }
+}
 /*footer*/
 .footer{
     background-color: #24262b;
