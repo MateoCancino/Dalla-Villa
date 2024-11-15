@@ -627,3 +627,126 @@ user-select: none;
         width: 100%;
     }
 }
+/* estilo pagina testamentos*/
+.general {
+    background-color: #fafbff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.titulo {
+    width: 50%;  
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo h1 {
+    color: #435b94;
+    font-size: 6rem; /* Tamaño del título */
+    margin-bottom: 80px;
+}
+
+.titulo p {
+    letter-spacing: 1.5px; /* Incrementa la separación entre letras */
+    line-height: 1.8; /* Incrementa la altura de las líneas */
+    font-size: 1.8rem; /* Tamaño del texto */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    margin-left:165px;
+    max-width: 80%; /* Ajusta el ancho máximo del párrafo */
+    text-align: justify; /* Justifica el texto para mejorar su presentación */
+}
+
+.imagen{
+        width: 40%;
+        height: 60%;
+        margin-right: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.imagen img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    border-color: #435b94;
+    box-shadow: 0 0 40px #435b94;
+}
+.imagen:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    background-color: rgba(0, 0, 0, 0.2); /* Agrega un fondo semitransparente */
+    border-radius: 10px; /* Añade bordes redondeados al pasar el cursor */
+    border-color: #435b94;
+    box-shadow: 0 0 40px #435b94;
+}
+button {
+    margin-top: 50px;
+    width: 560px;
+    height: 40px;
+    margin-left: 30px;
+    margin-left: 450px;
+    border-color: #435b94;
+    box-shadow: 0 0 40px #435b94;
+    color: #435b94;
+    font-size: 17px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color:#435b94;
+    padding: 5px;
+    color: #b4b4b4;
+    width: 560px;
+    height: 40px;
+    transform: scale(1.1); /* Agranda ligeramente el botón */
+    animation: bounce 0.5s ease; /* Aplica la animación de rebote */
+}
+
+@media (max-width: 768px) {
+    .general {
+        flex-direction: column; /* Cambia los elementos a columna */
+        height: auto;
+    }
+
+    .titulo, .imagen {
+        flex: 1 1 100%; /* Ocupan el 100% del ancho */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .titulo h1 {
+        font-size: 1.9rem;
+    }
+
+    .titulo p {
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    button {
+        margin: 5px ;
+        width: 80%;
+        margin-left: 35px;
+    }
+
+    button:hover {
+        margin: 5px ;
+        width: 80%; 
+        margin-left: 35px;
+    }
+
+    .imagen img {
+        align-items: center;
+        margin-left: 55px;
+    }
+}
