@@ -663,11 +663,11 @@ user-select: none;
 
 /* Estilos para el iframe dentro del contenedor mapa */
 .map iframe {
-    width: 80%; /* Ajusta el ancho según lo que necesites */
+    width: 80%; 
     height: 235px; /* Ajusta la altura para que quede más bajo */
     margin: 0 ;
     border: 0; /* Elimina el borde */
-    display: block; /* Elimina el espacio debajo del iframe */
+    display: block; /* saca el espacio debajo del iframe */
     border-radius: 8px;
 }
 
