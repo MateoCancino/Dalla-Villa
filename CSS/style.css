@@ -343,9 +343,6 @@ button {
 }
 
 
-
-
-
 h2 {
     color: #435b94;
     font-size: 300%;
@@ -442,6 +439,7 @@ textarea:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
     transform: scale(1.02); /* Aumenta ligeramente el tamaño */
     border-color: #007BFF; /* Cambia el color del borde */
+    transition: all 0.3s ease; /* Transición suave para las animaciones */
 }
 
 button {
@@ -453,6 +451,8 @@ button {
 
 button:hover {
     background-color:#435b94;
+    padding: 5px;
+    color: #b4b4b4;
     width: 100px;
     height: 40px;
 }
@@ -606,6 +606,7 @@ user-select: none;
     margin: 0 ;
     border: 0; /* Elimina el borde */
     display: block; /* Elimina el espacio debajo del iframe */
+    border-radius: 8px;
 }
 
 @media (max-width:900px){
