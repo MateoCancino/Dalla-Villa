@@ -262,7 +262,7 @@ section.inicio{
 }
 
 /* Subcajas */
-.sub_1, .sub_2, .sub_3{
+.sub_caja{
     border: 3px #435b94 solid;
     padding: 5px;
     padding-top: 2px;
@@ -276,10 +276,10 @@ section.inicio{
     transition: transform 0.3s ease-in-out;
 }
 
-.sub_1:hover, .sub_2:hover, .sub_3:hover {
+.sub_caja:hover {
     transform: scale(1.05); 
 }
-.sub_1 p, .sub_2 p, .sub_3 p {
+.sub_caja p {
     color: #435b94; /*#2e8b57 o #33333*/
     font-size: 16px; 
     line-height: 1.6; 
