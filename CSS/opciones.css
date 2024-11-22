@@ -1,127 +1,43 @@
-/* Estilo pagina testamentos, 
-    gestion inmobiliaria, 
-    certificaciones y legalizaciones 
-    escrituras publicas
-*/
-.option-services__container {
-    background-color: #fafbff;
-    width: 100vw;
-    height: 100vh;
+.container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 100vh;
     overflow: hidden;
-    animation: fadeIn 1s ease-out;
 }
-
-.option-services__text {
-    width: 50%; 
+.container__text{
+    margin: 0 2rem 0 2rem ;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
 }
-
-.option-services__text h1 {
+.container__text h2{
     color: #435b94;
-    font-size: 3rem; 
-    margin-top: 30px;
-    margin-bottom: 60px;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
-
-.option-services__text p {
-    letter-spacing: 1.5px; 
-    line-height: 1.8; /* Incrementa la altura de las líneas */
-    font-size: 14px; 
-    line-height: 1.6;
-    margin-bottom: 15px;
-    margin-left:165px;
-    max-width: 80%; 
-    text-align: justify; 
+.container p{
+    font-size: 18px;
+    margin-bottom:10px;
 }
-
-.option-services__imagen{
-        width: 40%;
-        height: 60%;
-        margin-right: 58px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.container__text button{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
 }
-
-.option-services__imagen img {
-    width: 90%;
-    height: 90%;
+.image__container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 50%;
+}
+.image__container img{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.5s ease, background-color 0.5s ease;
-    border-color: #435b94;
-    box-shadow: 0 0 40px #435b94;
-}
-.option-services__imagen:hover img {
-    transform: scale(1.1); /* Aumenta el tamaño al 110% */
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border-color: #435b94;
-    box-shadow: 0 0 40px #435b94;
-}
-button {
-    margin-top: 50px;
-    width: 560px;
-    height: 40px;
-    margin-left: 1000px;
-    border-color: #435b94;
-    box-shadow: 0 0 40px #435b94;
-    color: #435b94;
-    font-size: 17px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background-color:#435b94;
-    padding: 5px;
-    color: #fafbff;
-    width: 560px;
-    height: 40px;
-    transform: scale(1.1); 
-    animation: bounce 0.5s ease; /* Aplica la animación de rebote */
-}
-
-@media (max-width: 768px) {
-    .general {
-        flex-direction: column; 
-        height: auto;
-    }
-
-    .titulo, .imagen {
-        flex: 1 1 100%; 
-        text-align: center; 
-    }
-
-    .titulo h1 {
-        font-size: 1.9rem;
-    }
-
-    .titulo p {
-        max-width: 90%;
-        margin: 0 auto;
-        font-size: 1.2rem;
-    }
-
-    button {
-        margin: 5px ;
-        width: 80%;
-        margin-left: 35px;
-    }
-
-    button:hover {
-        margin: 5px ;
-        width: 80%; 
-        margin-left: 35px;
-    }
-
-    .imagen img {
-        align-items: center;
-        margin-left: 55px;
-    }
 }
