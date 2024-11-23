@@ -23,12 +23,12 @@
                 <img src="Imagenes/logo-gris.svg" alt="Dalla Villa">
             </a>
         </div>
-        <div class="line">
-            <p></p>
+        <div class="header__line">
+            <div></div>
         </div>
         <nav>
             <ul class="navbar">
-                <li class="navbar__item navbar--inicio"><a href="#inicio">Inicio</a></li>
+                <li class="navbar__item navbar__item--inicio"><a href="#inicio">Inicio</a></li>
                 <li class="navbar__item"><a href="#nosotros">Nosotros</a></li>
                 <li class="navbar__item"><a href="#servicios">Servicios</a></li>
                 <li class="navbar__item"><a href="#contacto">Contacto</a></li>
@@ -52,65 +52,65 @@
             <div class="container__inicio--edifice">
                 <img src="Imagenes/edificio-dallavilla.png" alt="Edificio">
             </div>
-        </section>  
+        </section> 
+        <!--Sección de Nosotros-->
         <section  id="nosotros" class="nosotros">
-            <!--Conteiner de la imagen-->
-            <div class="contenedor_img">
+        <!--Conteiner de la imagen-->
+            <div class="container__img">
                 <img src="Imagenes/imagen_proyecto.-removebg-preview.png" alt="Imagen_empresario" title="Empresario">
             </div>
             <!--Conteiner de el segundo apartado-->
-            <div class="contenedor_presentacion">
+            <div class="container__presentacion">
                 <div class="presentacion">
-                    <p> Ea similique nam obcaecati odit, temporibus itaque amet rerum illo magni necessitatibus placeat nobis quaerat fugiat, eius dolorum at accusantium aliquam ex! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, velit. Libero animi quia delectus perferendis fuga, incidunt eius facere! Ipsum ad minima autem, commodi labore et alias cum harum optio! </p>
+                    <p>La Escribanía Dalla Villa es un establecimiento especializado en servicios notariales, ofreciendo una amplia gama de servicios legales y administrativos a particulares, empresas y organizaciones. Con un enfoque en la excelencia, la integridad y la eficiencia, nos dedicamos a proporcionar asesoramiento y asistencia en diversas áreas.</p>
                 </div>
-                <div class="contenedor_sub_cajas">
-                    <div class="sub_caja">
-                        <img src="Imagenes/Experiencia.png" alt="2 años de experiencia">
+                <div class="container__cards">
+                    <div class="card">
+                        <img src="Imagenes/Experiencia.svg" alt="2 años de experiencia">
                         <p>Años de experiencia</p>
                     </div>
-                    <div class="sub_caja">
-                        <img src="Imagenes/eficiencia.png" alt="Eficiencia">
-                        <p>Eficiencia en lo que nos dedicamos</p>
+                    <div class="card">
+                        <img src="Imagenes/eficiencia.svg" alt="Eficiencia">
+                        <p>Eficiencia garantizada</p>
                     </div>
-                    <div class="sub_caja">
-                        <img src="Imagenes/Integridad.png" alt="transparncia">
+                    <div class="card">
+                        <img src="Imagenes/Integridad.svg" alt="transparncia">
                         <p>Integridad en cada trabajo</p>
                     </div>
                 </div>
             </div>
     </section>
     <!--Section Servicios-->
-    <section id="servicios">
+    <section id="servicios" class="servicio">
         <div class="servicio__item">
             <a href="/Secciones HTML/Testamento.html" target="_blank">
                 <img src="Imagenes/Testamentos.png" alt="testamento">
-                <p>Testamentos</p>
+                <p class="servicio__text">Testamentos</p>
             </a>
         </div>
         <div class="servicio__item">
             <a href="/Secciones HTML/Gestion.html" target="_blank">
                 <img src="Imagenes/Gestión inmobiliaria.png" alt="testamento">
-                <p>Gestión inmobiliaria</p>
+                <p class="servicio__text">Gestión inmobiliaria</p>
             </a>
         </div>
         <div class="servicio__item">
             <a href="/Secciones HTML/Escrituras.html" target="_blank">
                 <img src="Imagenes/Escrituras.png" alt="testamento">
-                <p>Escrituras publicas</p>
+                <p class="servicio__text">Escrituras publicas</p>
             </a>
         </div>
         <div class="servicio__item">
             <a href="/Secciones HTML/Certificaciones.html" target="_blank">
                 <img src="Imagenes/Legalizaciones.png" alt="testamento">
-                <p>Certificaciones y legalizaciones</p>
+                <p class="servicio__text">Certificaciones y legalizaciones</p>
             </a>
         </div>
-        
-</section>
-<div>
-    <button type="submit">Consulte por mas tramites</button>
-</div>
-<!--Section Contacto-->
+        <div>
+            <button type="submit">Consulte por mas tramites</button>
+        </div>
+    </section>
+    <!--Section Contacto-->
     <section id="contacto">
         <form id="formulario_contacto">
             <div class="general">
@@ -138,14 +138,12 @@
                     <div class="telUbi">
                         <div class="telefonos">
                             <h2>Telefonos</h2>
-
                             <div class="telefonos">
                                 <img src="Imagenes/descarga.jpeg" alt="telefono"    width="30px" height="30px">
                                 <input type="text" placeholder="Fijo" id="fijo"     name="tfijo"> <br>
                                 <img src="Imagenes/descarga.jpeg" alt="telefono"    width="30px" height="30px">
                                 <input type="text" placeholder="Recepcion"  id="recepcion" name="trecepcion">
                             </div>
-
                         </div>
                     </div>
             </div>

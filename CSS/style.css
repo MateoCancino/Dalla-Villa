@@ -20,16 +20,16 @@ header{
     top: 0px;
     z-index: 20;
 }
-header .header__logo a img{
+.header__logo a img{
     height: 40px;
     margin-left: 30px;
     transition: 0.5s;
 }
-header .header__logo a img:hover{
+.header__logo a img:hover{
     transform: translateY(-4px);
 }
 /*Linea entre el Logo & NavBar Items*/
-.line{
+.header__line{
     margin-left: 15px;
     height: 30px;
     width: 2px;
@@ -58,7 +58,7 @@ header .header__logo a img:hover{
 .navbar__item a:active{
     background-color: #657db7 ;
 }
-.navbar--inicio{
+.navbar__item--inicio{
     display: none;
 }
 /*NavBar responsive*/
@@ -106,10 +106,10 @@ header .header__logo a img:hover{
         background-color: #435b94;
         color:#fafbff;
     }
-    .navbar--inicio{
+    .navbar__item--inicio{
         display: block;
     }
-    .line{
+    .header__line{
         display: none;
     }
     .navbar__item{
@@ -211,46 +211,68 @@ section.inicio{
     height: 100vh;
 }
 /* Estilos del contenedor de la imagen */
-.contenedor_img {
+.container__img {
     margin: 10px;
     margin-bottom: 0;
     width: 40vw;
 
 }
-/* Atributos para la imagen */
-.contenedor_img img{
-    width:40vw;
-    /* Difuminado de la imagen */
-    mask-image: linear-gradient(#fff 50%, transparent);
-    z-index: 0;
-    position: relative;
-    animation: fadeIn 1s ease-out; /* Nueva animación de entrada */
-    transition: transform 0.3s ease-in-out; /* Efecto de transición */
+
+.container__img {
+    position: relative; /* Necesario para que el rectángulo esté detrás */
+    display: inline-block; /* Ajusta el tamaño al contenido */
+    width: fit-content;
+}
+
+.container__img::before {
+    content: ""; /* Genera el rectángulo */
+    position: absolute; /* Posiciona detrás de la imagen */
+    top: 10%; /* Ajusta según la necesidad */
+    left: 12%; /* Ajusta según la necesidad */
+    width: 70%; /* Ancho del rectángulo */
+    height: 55%; /* Alto del rectángulo */
+    background-color:transparent; /* Color de fondo */
+    transform: rotate(10deg); /* Rotación */
+    z-index: -1; /* Envía el rectángulo detrás de la imagen */
+    border: 2px solid #3355AA; /* Borde azul */
+    border-radius: 8px; /* Bordes redondeados si los necesitas */
+    box-shadow: 0 0 10px #435b96;
+}
+
+.container__img img {
+    display: block; /* Elimina espacios extra */
+    max-width: 100%; /* Asegura que la imagen no sobresalga */
+    border-radius: 8px; /* Opcional, para bordes redondeados */
+    mask-image: linear-gradient(black 95%, transparent);
+    z-index: 1;
+    animation: fadeIn 1s ease-out;   
+    transition: transform 0.3s ease-in-out;  
 }
 /*animacion de la imagen*/
-.contenedor_img img:hover {
+.container__img img:hover {
     transform: scale(1.05); 
 }
+
+
 /* Contenedor para las cajas de presentacion */
-.contenerdor_presentacion{
+.container__presentacion{
     width:60vw ;
     position: relative; 
 }
 /* Caja de presentacion */
 .presentacion{
     position: relative;
-    border: 3px #435b94 solid;
     border-image: linear-gradient(to right, #435b94 25%, white 50%, #435b94 75%) 1;
     padding: 10px;
     margin: 40px;
-    height: 35vh;
-    border-radius: 10px;
-    box-shadow: 0 0 30px #435b94;
-    letter-spacing: 2px;
+    box-shadow: 0 0 10px #435b96; /* Azul difuminado */
+    letter-spacing: 1px;
     text-align: justify;
     overflow: hidden;
     animation: fadeIn 1s ease-out;
     transition: transform 0.3s ease-in-out;
+    border: 3px #435b94 solid;
+    border-radius: 10px;
 }
 .presentacion:hover {
     transform: scale(1.05); 
@@ -258,46 +280,28 @@ section.inicio{
 
 .presentacion p {
     color: #435b94; /*#2e8b57 o #33333*/
-    font-size: 16px; 
-    line-height: 1.5;
+    font-size: 20px; 
     margin: 10px 0; 
 }
 
-/* triangulo superior izquierdo */
-.presentacion::before {
-    content: '';
-    position: absolute;
-    top: -10px; 
-    left: -10px; 
-    border-left: 20px solid transparent;
-    border-bottom: 20px solid #435b94; 
-    z-index: 0; 
-}
 
-/* Triángulo superior derecho */
-.presentacion::after {
-    content: '';
-    position: absolute;
-    top: -10px; 
-    right: -10px; 
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #435b94; 
-    z-index: 0; 
-}
 
 /* Contenedor de subcajas */
-.contenedor_sub_cajas{
+.container__cards{
     display: flex;
     justify-content: space-between;
     margin: 40px;
 }
 
 /* Subcajas */
-.sub_caja{
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border: 3px #435b94 solid;
     padding: 5px;
     padding-top: 2px;
-    height: 28vh;
     width: 15vw;
     border-radius: 10px;
     box-shadow: 0 0 30px #435b94;
@@ -307,22 +311,21 @@ section.inicio{
     transition: transform 0.3s ease-in-out;
 }
 
-.sub_caja:hover {
+.card:hover {
     transform: scale(1.05); 
 }
-.sub_caja p {
+.card p {
     color: #435b94; /*#2e8b57 o #33333*/
     font-size: 16px; 
-    line-height: 1.6; 
     margin: 5px 0; 
     text-align: center; 
     padding: 0 10px; 
 }
 
 /* Imagenes de las subcajas */
-.contenedor_sub_cajas img {
-        width: 100%;
-        height: 70%;
+.card img {
+    margin-top: 10px;
+    width: 150px;
 }
 
 /* Animación de entrada para la imagen (suaviza la aparición) */
@@ -338,17 +341,17 @@ section.inicio{
         height: auto;
     }
 
-    .contenedor_img {
+    .container__img {
         width: 100%;
         margin: 0;
     }
 
-    .contenedor_img img {
+    .container__img img {
         width: 100%;
         mask-image: none;
     }
 
-    .contenerdor_presentacion {
+    .container__presentacion {
         width: 100%;
         margin: 0;
     }
@@ -358,7 +361,7 @@ section.inicio{
         height: auto;
     }
 
-    .contenedor_sub_cajas {
+    .contenainer__cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -366,7 +369,7 @@ section.inicio{
         margin: 20px 10px;
     }
 
-    .sub_caja {
+    .card {
         width: 45%; /* Ajusta según necesidad */
         display: flex;
         flex-direction: column;
@@ -375,13 +378,13 @@ section.inicio{
         margin-bottom: 20px;
     }
 
-    .contenedor_sub_cajas img {
+    .card img {
         width: 100%;
         height: 70%;
         margin-bottom: 5px;
     }
 
-    .sub_caja p {
+    .card p {
         margin: 5px 0;
         padding: 0 5px;
         flex-grow: 1;
