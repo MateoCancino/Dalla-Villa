@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Etiquetas basicas de inicialización-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <!--Tipografias e Iconos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="/JS/script.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="icon" href="Imagenes/logo-gris.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!--Estilos de la pagina-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/servicios.css">
+    <!--Script JS de la pagina-->
+    <script src="/JS/script.js" defer></script>
+    <!--Favicon y titulo-->
+    <link rel="icon" href="Imagenes/logo-gris.svg" type="image/x-icon">
     <title>Dalla Villa</title>
 </head>
 <body>
@@ -82,36 +89,41 @@
     </section>
     <!--Section Servicios-->
     <section id="servicios" class="servicio">
-        <div class="servicio__item">
-            <a href="/Secciones HTML/Testamento.html" target="_blank">
-                <img src="Imagenes/Testamentos.png" alt="testamento">
-                <p class="servicio__text">Testamentos</p>
-            </a>
+        <h3>Conoce nuestros servicios</h3>
+        <div class="container__servicio">
+            <div class="servicio__item">
+                <a href="/Secciones HTML/Testamento.html" target="_blank">
+                    <img src="Imagenes/Testamentos.png" alt="Testamento">
+                    <p class="servicio__text">Testamentos</p>
+                </a>
+            </div>
+            <div class="servicio__item">
+                <a href="/Secciones HTML/Gestion.html" target="_blank">
+                    <img src="Imagenes/Gestión inmobiliaria.png" alt="Gestion inmobiliaria">
+                    <p class="servicio__text">Gestión inmobiliaria</p>
+                </a>
+            </div>
+            <div class="servicio__item">
+                <a href="/Secciones HTML/Escrituras.html" target="_blank">
+                    <img src="Imagenes/Escrituras.png" alt="Escrituras">
+                    <p class="servicio__text">Escrituras publicas</p>
+                </a>
+            </div>
+            <div class="servicio__item">
+                <a href="/Secciones HTML/Certificaciones.html" target="_blank">
+                    <img src="Imagenes/Legalizaciones.png" alt="Cert. y leg.">
+                    <p class="servicio__text">Certificaciones y legalizaciones</p>
+                </a>
+            </div>
         </div>
-        <div class="servicio__item">
-            <a href="/Secciones HTML/Gestion.html" target="_blank">
-                <img src="Imagenes/Gestión inmobiliaria.png" alt="testamento">
-                <p class="servicio__text">Gestión inmobiliaria</p>
-            </a>
+        <div class="servicio__button">
+            <a href="#contacto">Consulte por más tramites <span class="material-symbols-outlined">arrow_forward</span></a>
+            
         </div>
-        <div class="servicio__item">
-            <a href="/Secciones HTML/Escrituras.html" target="_blank">
-                <img src="Imagenes/Escrituras.png" alt="testamento">
-                <p class="servicio__text">Escrituras publicas</p>
-            </a>
-        </div>
-        <div class="servicio__item">
-            <a href="/Secciones HTML/Certificaciones.html" target="_blank">
-                <img src="Imagenes/Legalizaciones.png" alt="testamento">
-                <p class="servicio__text">Certificaciones y legalizaciones</p>
-            </a>
-        </div>
-        <div>
-            <button type="submit">Consulte por mas tramites</button>
-        </div>
+        
     </section>
     <!--Section Contacto-->
-    <section id="contacto">
+    <section id="contacto" class="contactanos">
         <form id="formulario_contacto">
             <div class="general">
                     <div class="contacto">

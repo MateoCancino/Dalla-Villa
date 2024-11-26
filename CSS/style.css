@@ -19,6 +19,8 @@ header{
     gap: 15px;
     top: 0px;
     z-index: 20;
+    position: fixed;
+    overflow: hidden;
 }
 .header__logo a img{
     height: 40px;
@@ -97,6 +99,7 @@ header{
         background-color:#fafbff92 ;
         backdrop-filter: blur(50px);
         box-shadow: 0 0 50px 20px #435b94;
+        z-index: 100;
     }
     .navbar li{
         width: 100%;
@@ -123,15 +126,15 @@ header{
 /*Section Inicio*/
 main{
     min-height:100%;
+    overflow: hidden;
 }
 section.inicio{
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
-    z-index: 10;
 }
 /*Perfilando el Inicio*/
 .container__inicio{
@@ -208,13 +211,18 @@ section.inicio{
 .nosotros {
     display: flex;
     overflow: hidden;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 /* Estilos del contenedor de la imagen */
 .container__img {
     margin: 10px;
     margin-bottom: 0;
-    width: 40vw;
+    width: 40%;
 
 }
 
@@ -225,17 +233,17 @@ section.inicio{
 }
 
 .container__img::before {
-    content: ""; /* Genera el rectángulo */
-    position: absolute; /* Posiciona detrás de la imagen */
-    top: 10%; /* Ajusta según la necesidad */
-    left: 12%; /* Ajusta según la necesidad */
-    width: 70%; /* Ancho del rectángulo */
-    height: 55%; /* Alto del rectángulo */
-    background-color:transparent; /* Color de fondo */
-    transform: rotate(10deg); /* Rotación */
-    z-index: -1; /* Envía el rectángulo detrás de la imagen */
-    border: 2px solid #3355AA; /* Borde azul */
-    border-radius: 8px; /* Bordes redondeados si los necesitas */
+    content: "";
+    position: absolute; 
+    top: 10%; 
+    left: 12%; 
+    width: 70%; 
+    height: 55%; 
+    background-color:transparent; 
+    transform: rotate(10deg); 
+    z-index: -1; 
+    border: 2px solid #3355AA;
+    border-radius: 8px; 
     box-shadow: 0 0 10px #435b96;
 }
 
@@ -256,7 +264,7 @@ section.inicio{
 
 /* Contenedor para las cajas de presentacion */
 .container__presentacion{
-    width:60vw ;
+    width:60% ;
     position: relative; 
 }
 /* Caja de presentacion */
@@ -303,6 +311,7 @@ section.inicio{
     padding: 5px;
     padding-top: 2px;
     width: 15vw;
+    height: 20%;
     border-radius: 10px;
     box-shadow: 0 0 30px #435b94;
     text-align: center;
@@ -395,61 +404,25 @@ section.inicio{
 }
 
 
-#servicios{
-    width:100vw;
-    height:85vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.servicio__item{
-    background-color: #435b94;
-    width: 300px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 20px;  
-    animation: fadeIn 1s ease-out;
-    transition: transform 0.3s ease-in-out; 
-}
-.servicio__item:hover{
-    transform: scale(1.05); 
-}
-.servicio__item img{
-    width: 200px;
-    height: 230px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-button {
-    width: 300px;
-    padding: 8px;
-    text-align: center;
-    margin-left: 74vh;
-    border-radius: 10px;
-    border-color: #435b94;
-    box-shadow: 0 0 20px #435b94;
-    color: #435b94;
-    font-size: 17px;
+
+#contacto{
+    overflow: hidden;
 }
 
-
-h2 {
+.contactanos h2 {
     color: #435b94;
     font-size: 300%;
     transition: all 0.3s ease-in-out;
     margin-left: 30px;
 }
 
-h2:hover {
+.contactanos h2:hover {
     color: #435b96;
     transform: scale(1.1);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 /* dando estilos a los distintas secciones (general,contacto y telfono)*/
-.general {
+.contactanos .general {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -457,36 +430,36 @@ h2:hover {
     overflow: hidden;
 }
 
-.contacto {
+.contactanos .contacto {
     width: 50%;  
     margin-top: 40px;
     margin-left: 30px;
 }
 
-.telefonos {
+.contactanos .telefonos {
     margin-top: 20px;
     margin-left: 30px;
     margin-bottom: 280px;
 }
 
-.ubicacion {
+.contactanos .ubicacion {
     margin-left: 30px;
     margin-top: 1px;
 }
 
-.telUbi{
+.contactanos .telUbi{
     width: 50%;
     display: grid;
 }
-placeholder {
+.contactanos placeholder {
     color: #b4b4b4;;
 }
 
-input:hover{
+.contactanos input:hover{
     background-color: #ecebeb;
 }
 
-input {
+.contactanos input {
     font-size: 150%;
     width: 700px;
     margin-left: 20px;
@@ -499,19 +472,19 @@ input {
     transition: all 0.3s ease; 
 }
 
-input:hover {
+.contactanos input:hover {
     outline: none; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
     border-color: #007BFF; 
 }
-label {
+.contactanos label {
     color: #435b94;
     font-size: 150%;
     margin-top: 15px;
     margin-left: 30px;
 }
-textarea {
+.contactanos textarea {
     width: 630px;
     height: 350px;
     font-size: 20px;
@@ -528,7 +501,7 @@ textarea {
         transform: translateX(100%);
     }
 }
-textarea:hover {
+.contactanos textarea:hover {
     outline: none; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
     transform: scale(1.02); 
@@ -536,14 +509,14 @@ textarea:hover {
     transition: all 0.3s ease; 
 }
 
-button {
+.contactanos button {
     margin: 10px;
     width: 100px;
     height: 40px;
     margin-left: 30px;
 }
 
-button:hover {
+.contactanos button:hover {
     background-color:#435b94;
     padding: 5px;
     color: #fafbff;
@@ -551,35 +524,35 @@ button:hover {
     height: 40px;
 }
 @media (max-width: 900px) {
-    .general {
+    .contactanos .general {
         flex-direction: column; /* Los elementos se apilan en columna */
         align-items: center; 
     }
 
-    .contacto, .telefonos {
+    .contactanos .contacto, .telefonos {
         width: 80%; 
         margin-left: 0;
         margin-right: 0;
         text-align: center;
     }
 
-    .telefonos > input {
+    .contactanos .telefonos > input {
         width: 20vh;
     }
 
-    .telefonos > img {
+    .contactanos .telefonos > img {
         opacity: 0;
     }
 
-    input, textarea {
+    .contactanos input, .contactanos textarea {
         width: 95%; 
         margin-left: 0;
     }
 
-    textarea {
+    .contactanos textarea {
         height: 250px; 
     }
-    button {
+    .contactanos button {
         width: 80px;
         height: 35px;
     }

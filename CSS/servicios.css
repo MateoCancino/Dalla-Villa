@@ -1,0 +1,91 @@
+/*Section Servicios*/
+#servicios{
+    width:100dvw;
+    height:100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 70px;
+    padding: 20px;
+}
+.servicio h3{
+    color: #435b94;
+    font-size: 3rem;
+}
+.container__servicio{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.servicio__item a{
+    background-color: #435b94;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;  
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0 0 20px #435b94;
+}
+.servicio__item p{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.servicio__item a{
+    text-decoration: none;
+    color: #fafbff;
+}
+.servicio__item a:hover{
+    transform: scale(1.05); 
+    background-color: #fafbff;
+    color: #435b94;
+}
+.servicio__item img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.servicio__button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.servicio__button a {
+    text-decoration: none;
+    padding: 8px;
+    width: 300px;
+    text-align: center;
+    border-radius: 12px;
+    border:2px solid #435b94;
+    box-shadow: 0 0 20px #435b94;
+    color: #435b94;
+    background-color: #fafbff;
+    font-size: 17px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.servicio__button a:hover{
+    transform: scale(1.1); 
+}
+/*Apartado responsive Servicios*/
+@media (max-width: 768px) {
+    .container__servicio {
+        flex-direction: column;
+        align-items: center;
+    }
+}
