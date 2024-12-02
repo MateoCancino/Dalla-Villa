@@ -87,10 +87,12 @@
     .container__servicio {
         flex-direction: column;
         align-items: center;
+        width: auto;
     }
     #servicios{
         width:auto;
         padding: 0;
+        padding-bottom: 25px;
     }
     .servicio h3{
         font-size: 1.5rem;

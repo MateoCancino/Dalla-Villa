@@ -7,6 +7,7 @@
 }
 body{
     background-color: #fafbff;
+    z-index: 10;
 }
 /*Header & NavBar*/
 header{
@@ -18,7 +19,7 @@ header{
     align-items: center;
     gap: 15px;
     top: 0px;
-    z-index: 20;
+    z-index: 1000;
     position: fixed;
     overflow: hidden;
 }
@@ -68,11 +69,11 @@ header{
     font-size: 30px;
     color: #435b94;
     cursor: pointer;
-    z-index: 100;
+    z-index: 10000;
     margin-left: 20px;
     display: none;
 }
-@media (max-width: 1000px){
+@media (max-width: 900px){
     header{
         align-items: center;
         justify-content: space-between;
@@ -86,7 +87,7 @@ header{
         display: none;
     }
     .navbar{
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
@@ -99,7 +100,7 @@ header{
         background-color:#fafbff92 ;
         backdrop-filter: blur(50px);
         box-shadow: 0 0 50px 20px #435b94;
-        z-index: 100;
+        z-index: 10000;
     }
     .navbar li{
         width: 100%;
@@ -120,6 +121,7 @@ header{
     }
     .navbar.open{
         right: 0;
+        z-index: 10000;
     }
     
 }
@@ -299,8 +301,8 @@ section.inicio{
 .container__cards{
     display: flex;
     justify-content: space-between;
-    margin: 30px;
-    gap: 15px;
+    margin: 15px;
+    gap: 10px;
 }
 
 /* Subcajas */
@@ -368,8 +370,8 @@ section.inicio{
 
     .presentacion {
         height: auto;
-        width: 75%;
-        margin-left: 12%;
+        width: 80%;
+        margin-left: 10%;
     }
 
     .contenainer__cards {
