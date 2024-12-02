@@ -141,6 +141,7 @@ section.inicio{
     display: flex;
     justify-content: start;
     align-items: center;
+    padding-left: 11%;
 }
 .inicio__logo {
     display: flex;
@@ -311,7 +312,6 @@ section.inicio{
     padding: 5px;
     padding-top: 2px;
     width: 15vw;
-    height: 20%;
     border-radius: 10px;
     box-shadow: 0 0 30px #435b94;
     text-align: center;
@@ -406,7 +406,9 @@ section.inicio{
 
 
 #contacto{
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contactanos h2 {
@@ -414,6 +416,7 @@ section.inicio{
     font-size: 300%;
     transition: all 0.3s ease-in-out;
     margin-left: 30px;
+    padding-bottom: 20px;
 }
 
 .contactanos h2:hover {
@@ -423,11 +426,11 @@ section.inicio{
 }
 /* dando estilos a los distintas secciones (general,contacto y telfono)*/
 .contactanos .general {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+    height: auto;
+    width: auto;
     justify-content: center;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .contactanos .contacto {
@@ -438,8 +441,7 @@ section.inicio{
 
 .contactanos .telefonos {
     margin-top: 20px;
-    margin-left: 30px;
-    margin-bottom: 280px;
+    margin-bottom: 50px;
 }
 
 .contactanos .ubicacion {
@@ -448,8 +450,9 @@ section.inicio{
 }
 
 .contactanos .telUbi{
-    width: 50%;
-    display: grid;
+    width: 100%;
+    display: flex;
+    padding-left: 7%;
 }
 .contactanos placeholder {
     color: #b4b4b4;;
@@ -485,13 +488,14 @@ section.inicio{
     margin-left: 30px;
 }
 .contactanos textarea {
-    width: 630px;
+    width: 720px;
     height: 350px;
     font-size: 20px;
     margin-top: 15px;
     margin-left: 30px;
     border-radius: 8px;
-    transition: all 0.3s ease; /* Transición suave para las animaciones */
+    transition: all 0.3s ease;
+    display: flex;
 }
 @keyframes move-border {
     0% {
@@ -525,19 +529,18 @@ section.inicio{
 }
 @media (max-width: 900px) {
     .contactanos .general {
-        flex-direction: column; /* Los elementos se apilan en columna */
         align-items: center; 
+        display: flex;
     }
-
+    
+    .contactanos .telUbi{
+        padding-left: 0;
+    }
     .contactanos .contacto, .telefonos {
-        width: 80%; 
+        width: 110%; 
         margin-left: 0;
         margin-right: 0;
         text-align: center;
-    }
-
-    .contactanos .telefonos > input {
-        width: 20vh;
     }
 
     .contactanos .telefonos > img {
@@ -546,11 +549,15 @@ section.inicio{
 
     .contactanos input, .contactanos textarea {
         width: 95%; 
-        margin-left: 0;
     }
 
     .contactanos textarea {
+        width: 90%;
         height: 250px; 
+        justify-content: center;
+        display: flex;
+        margin-left: 5%;
+        padding-left: 20%;
     }
     .contactanos button {
         width: 80px;
