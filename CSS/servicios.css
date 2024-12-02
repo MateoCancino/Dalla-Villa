@@ -24,7 +24,7 @@
 }
 .servicio__item a{
     background-color: #435b94;
-    width: 400px;
+    width: 350px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -93,6 +93,6 @@
         padding: 0;
     }
     .servicio h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
